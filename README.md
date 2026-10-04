@@ -28,17 +28,17 @@ Build and publish from the source repository, following its
    uploads all three assets to a draft, then publishes it and marks it latest.
 5. Verify the release assets and the latest feed URL.
 
-Normal releases require no appcast commit or push to this repository.
+Never commit `appcast.xml` to this repository; upload it as a release asset
+only. Release titles must be `Handwriting to Text <version>` (for example,
+`Handwriting to Text 0.1`). Never append a parenthesized build number such as
+`(1)` to a release title. Build numbers remain in tags and Sparkle metadata.
 Keep the private signing key and credentials outside Git. The latest feed
 URL is for stable releases; prereleases need a separate update channel.
 
 ## Existing installations
 
-The original `v0.1-1` app reads the committed `appcast.xml` through its raw
-GitHub URL. Its matching appcast is also attached to that release. Preserve
-the committed file so existing installations can still check for updates.
-
-When the next release ships with the new feed URL and a higher build number,
-copy that release's attached appcast into the legacy committed file and
-commit/push it once. That migration update lets old installations upgrade to
-the release-asset feed. Subsequent normal releases only upload assets.
+The original `v0.1-1` app reads the old raw GitHub feed URL. The committed
+feed has been removed; the matching appcast remains attached to that release.
+Those installations need a manual download of the next release containing
+the new feed URL to resume automatic updates. Do not recreate the committed
+feed. Keep the published DMG and ZIP unchanged.
