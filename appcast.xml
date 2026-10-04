@@ -1,6 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
-  <channel>
-    <title>Handwritten to Markdown Updates</title>
-  </channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Handwritten to Markdown Updates</title>
+        <item>
+            <title>0.1</title>
+            <pubDate>Sun, 04 Oct 2026 22:01:55 +0100</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/gethopp/handwritingtotextapp_releases/releases/download/v0.1-1/HandwritingToText-v0.1-1.zip" length="17297946" type="application/octet-stream" sparkle:edSignature="JoY1ktft8p8XtEYqUNwfiC1hpZBzOSLHy9WD6s/vbCMXrFZsL0zGXSk8o3xAgdU6W6I3OUNsUxQ8Ygss5Z00Dg=="/>
+        </item>
+    </channel>
 </rss>
